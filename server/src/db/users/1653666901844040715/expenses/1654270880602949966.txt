@@ -1,0 +1,1 @@
+{"amount":240,"tags":["1654246908104866102"],"geo":{"lat":51.50703630613184,"lon":-0.14833023754154298},"address":{"MunicipalityZone":20,"Neighbourhood":"MayFair","FormattedAddress":"Chesterfield street, Next to the chess club","Place":"House 3"},"date":"2022-06-03T00:00:00.000Z","_id":"1654270880602949966"}

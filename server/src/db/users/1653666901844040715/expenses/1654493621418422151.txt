@@ -1,0 +1,1 @@
+{"amount":900,"tags":["1654350109021293075"],"geo":{"lat":49.21020667174574,"lon":-122.9869474045103},"address":{"MunicipalityZone":8,"Neighbourhood":"Burnaby","FormattedAddress":"Vancouver, Ewart street","Place":"House 55312"},"date":"2022-06-06T00:00:00.000Z","_id":"1654493621418422151"}

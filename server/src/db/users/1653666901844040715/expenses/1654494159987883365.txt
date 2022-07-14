@@ -1,0 +1,1 @@
+{"amount":560,"tags":["1654350117363733970"],"geo":{"lat":51.54753933974224,"lon":-0.16366632902898193},"address":{"MunicipalityZone":7,"Neighbourhood":"Belsize park","FormattedAddress":"Londen, Primrose gardens","Place":"House 49"},"date":"2022-06-15T00:00:00.000Z","_id":"1654494159987883365"}

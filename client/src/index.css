@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom {
+  background-image: url("./img/top-view-person-writing-laptop-with-copy-space.jpg");
+}
+.toast {
+  animation: toast 0.4s linear;
+}
+
+@keyframes toast {
+  from {
+    margin-right: -20px;
+    opacity: 0.5;
+  }
+  to {
+    margin-right: 30px;
+    opacity: 1;
+  }
+}
+
+.sidebar {
+  animation: sidebar 0.3s ease;
+}
+
+@keyframes sidebar {
+  from {
+    margin-left: -250px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+input:focus ~ div,
+input:valid ~ div {
+  top: -12px;
+  left: 15px;
+  font-size: small;
+  font-size: 14px;
+  color: #32cd32;
+  background-color: rgb(249 250 251);
+  padding: 0 5px;
+}
+
+.leaflet-container {
+  width: 100%;
+  min-height: 460px;
+  z-index: 30;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.modal {
+  animation: modal 0.3s ease;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}

@@ -1,0 +1,1 @@
+{"amount":690,"tags":["1654350111726368949"],"geo":{"lat":51.50715316794198,"lon":-0.059617504979216925},"address":{"MunicipalityZone":13,"Neighbourhood":"Wapping","FormattedAddress":"Londen, Reardon street","Place":"House 50"},"date":"2022-06-09T00:00:00.000Z","_id":"1654494470352650152"}
