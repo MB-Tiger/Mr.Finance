@@ -20,7 +20,7 @@ const MY_EXPENSES = gql`
 
 const DashboardHome = () => {
   useTitle("Dashboard");
-  const { loading, error, data } = useQuery(MY_EXPENSES);
+  const { loading, error, data, refetch } = useQuery(MY_EXPENSES);
   const [optionsMixedChart, setOptionsMixedChart] = useState({});
   const [seriesMixedChart, setSeriesMixedChart] = useState([]);
   const [optionsBar, setOptionsBar] = useState({});
@@ -32,12 +32,17 @@ const DashboardHome = () => {
       data: [myExpense.amount],
     };
   });
+  const sortedData = data?.getMyExpenses
+    .map((myExpense) => myExpense.amount)
+    .sort((a, b) => b - a);
 
   console.log(data);
   console.log(dataTag);
-  console.log(
-    data?.getMyExpenses.map((myExpense) => myExpense.date.substring(0, 10))
-  );
+  console.log(sortedData);
+
+  useEffect(() => {
+    refetch();
+  }, []);
 
   useEffect(() => {
     setOptionsMixedChart({
@@ -75,7 +80,7 @@ const DashboardHome = () => {
       yaxis: {
         tickAmount: 5,
         min: 0,
-        max: 1000,
+        max: sortedData ? sortedData[0] : 5000,
       },
     });
     setSeriesMixedChart([

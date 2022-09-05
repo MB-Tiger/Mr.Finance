@@ -104,7 +104,7 @@ const Sidebar = (props) => {
               cookies.remove("ut");
               refetch();
               navigate("/");
-              // window.location.href = "/"
+              window.location.href = "/";
               setIsSidebar(false);
             }}
           >
